@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let i;
+    let j;
+    let drawTable = '<table border="1" style="border-collapse: collapse" width="600" >'
+    for (i=1; i<=9; i++){
+        drawTable += '<tr>'
+        console.log('i--------------> ');
+        for (j=1; j<=9; j++){
+            console.log('j------------> ');
+            drawTable += '<td>' + i + '*' + j + '=' + i*j + '</td>';
+        }
+        drawTable += '</tr>'
+    }
+    console.log(drawTable)
+    drawTable += '</table>'
+    document.write(drawTable)
+</script>
+</body>
+</html>
